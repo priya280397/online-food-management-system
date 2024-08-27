@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="background-container">
+        <div class="container">
+            <form class="form-signup">
+                <h2 class="form-signup-heading">Sign Up</h2>
+                <label for="username" class="sr-only">Username</label>
+                <input type="text" id="username" class="form-control" placeholder="Username" required autofocus>
+                <label for="email" class="sr-only">Email address</label>
+                <input type="email" id="email" class="form-control" placeholder="Email address" required>
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-container {
+    background: url('chocolate.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 330px;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: aqua;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-signup-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 44px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    background-color: #ea0606; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+</style>

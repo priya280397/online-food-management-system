@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | Your Company Name</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: brown; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333; 
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .menu-item {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #fff; 
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .cart {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Order Now</h1>
+        <p> food order and enjoy a delicious meal delivered to your doorste</p>
+        <a href="foodhomepage.html">Back to Home</a>
+    </header>
+
+     <section class="menu">
+        <h2>Menu </h2>  
+        
+
+        <div class="menu-item" id="item1">
+            <img src="burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Classic beef burger with lettuce, tomato, and special sauce.</p>
+            <span>$10.99</span>
+            <button onclick="addToCart('item4', 'Burger', 10.99)">Add to Cart</button>
+        </div> 
+
+        <div class="menu-item" id="item2">
+            <img src="pizza.jpg" alt="Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <p>Delicious pepperoni pizza with tomato sauce and mozzarella cheese.</p>
+            <span>$12.99</span>
+            <button onclick="addToCart('item2', 'Pepperoni Pizza', 12.99)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" id="item3">
+            <img src="icecreem1.jpg" alt="Ice Cream">
+            <h3>Ice Cream</h3>
+            <p>Refreshing ice cream available in various flavors.</p>
+            <span>$5.99</span>
+            <button onclick="addToCart('item3', 'Ice Cream', 5.99)">Add to Cart</button>
+        </div>
+
+         <div class="menu-item" id="item4">
+            <img src="dosa.jpg" alt="Dosa">
+            <h3>Dosa</h3>
+            <p>South Indian crispy dosa served with chutney and sambar.</p>
+            <span>$8.99</span>
+            <button onclick="addToCart('item1', 'Dosa', 8.99)">Add to Cart</button>
+        </div> 
+        <div class="menu-item" id="item5">
+            <img src="coldcoffe.jpg" alt="cold drink">
+            <h3>cold drink</h3>
+            <p>Refreshing cold drink available in various flavors.</p>
+            <span>$4.99</span>
+            <button onclick="addToCart('item4', 'cold drink', 4.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item" id="item6">
+            <img src="shorma.jpg" alt="Shawarma">
+            <h3>shawarma</h3>
+            <p>Chicken Delicious Special Waffle Cone Shawarma.</p>
+            <span>$6.99</span>
+            <button onclick="addToCart('item6', 'Shawarma', 6.99)">Add to Cart</button>
+        </div>
+
+
+        
+
+    </section>
+
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <script>
+        function addToCart(itemId, itemName, itemPrice) {
+            var cartItem = document.createElement('li');
+            cartItem.textContent = itemName + ' - $' + itemPrice.toFixed(2);
+            document.getElementById('cartItems').appendChild(cartItem);
+        }
+
+        function checkout() {
+            alert('Thank you for your order! Your items will be delivered soon.');
+        }
+    </script>
+</body>
+</html>

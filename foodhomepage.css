@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+}
+#logofood{
+    margin: 10px 10px;
+}
+#logofood img{
+height: 59px;
+margin: 3px 6px;
+}
+
+
+#navbar ul {
+    display:flex;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    top: opx;
+    left: opx;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    
+        color: white;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    
+    
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#Home::before{
+    content: "";
+    background-image: url("foodhome11.jpg");
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    height: 742px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+    position: absolute;
+
+
+}
+#Home h1{
+    color: white;
+    text-align: center;
+}
+#Home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#Services .box{
+    border: 2px solid brown;
+    background-color: red;
+    margin: 25px 6px;
+    border-radius: 28px;
+    padding: 34px;
+    
+    
+
+}
+.box{
+    display: inline;
+    margin: 30px;
+}
+#i1{
+    display: inline;
+
+}
+.services-container{
+    display: inline;
+}
+#services.box img{
+    height: 160px;
+    margin: 150px;
+    display: block;
+
+}
+#services.box p{
+    font-size: 2.3rem;
+
+}
+#client-section{
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+}
+#client item{
+    height: 44px;
+    padding: 55px;
+}
+#client-section::before{
+    content: "";
+    /* position: absolute; */
+    background: url("bg.jpeg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    /* position: relative; */
+
+}
+#div{
+    display: inline;
+    float: left;
+}
+/* #box{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+} */
+#box{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.h-primary center{
+    font-size: 3.8rem;
+    padding: 12px;
+    align-items: center;
+}
+
+.h-secondary{
+    font-size: 2.3prem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+#center{
+    text-align: center;
+    margin-left: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+
+
+
+
+
+
+
+
